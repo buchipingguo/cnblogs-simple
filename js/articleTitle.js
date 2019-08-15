@@ -13,10 +13,10 @@ $(document).ready(function () {
     if (ch1.length > 0) {
         for (var i = 0; i < ch1.length; i++) {
             var th1 = $(ch1[i]);
-            // th1.wrap('<span title-type="h1" class="header__span"></span>');
+            th1.wrap('<span title-type="h1" class="header__span"></span>');
             // var th1Text = th1.text();
             // th1.text('');
-            // th1.addClass('header__dev');
+            th1.addClass('header__dev');
             // var th1Html = '<b class="dev__fe"><i>'+(i+1)+'</i></b>';
             // th1Html += '<span class="dev__slash">|</span>';
             // th1Html += '<b class="dev__ux"><i>0</i></b>';
@@ -39,11 +39,11 @@ $(document).ready(function () {
         var last = 0;
         for (i = 0; i < ch2.length; i++) {
             var th2 = $(ch2[i]);
-            // th2.wrap('<span title-type="h2" class="header__span"></span>');
+            th2.wrap('<span title-type="h2" class="header__span"></span>');
             // var th2Text = th2.text();
             // th2.text('');
-            // th2.addClass('header__dev');
-            // var their = th2.parents('.header__span').prevAll('.header__span[title-type="h1"]');
+            th2.addClass('header__dev');
+            var their = th2.parents('.header__span').prevAll('.header__span[title-type="h1"]');
             // if (their.length > 0) {
             //     their = $(their[0]);
             //     var current  = their.find('.dev__fe i').text();

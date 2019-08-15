@@ -2915,6 +2915,17 @@ button {
     margin: 0 auto 1em auto;
 }
 
+/* 自己加的*/
+.postBody h1:hover{
+    font-family: Lato,Arial,sans-serif;
+    font-weight: 300!important;
+    position: absolute;
+    transition-delay: .5s;
+    z-index: 2;
+    margin: 0!important;
+    color: #222 !important;
+}
+
 .postBody h2 {
     font-size: 150%;
     margin: 15px auto 2px auto;

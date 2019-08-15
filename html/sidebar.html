@@ -19,7 +19,7 @@
                     <li><a href="https://msg.cnblogs.com/send/icaihua" target="_blank">联系</a></li>
                     <li><a href="https://www.cnblogs.com/icaihua/rss" target="_blank">订阅</a></li>
                     <li><a href="https://i.cnblogs.com/" target="_blank">管理</a></li>
-                    <li><a href="https://github.com/Zhou-Hepeng" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank">GitHub</a></li>
                     <li><a href="https://www.cnblogs.com/" target="_blank">CNBlogs</a></li>
                 </ul>
             </div>
@@ -99,9 +99,9 @@
         blogStartDate : "2016-11-17", // 入园时间，年-月-日，入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
 
         // ---- 网站配置 ----
-        webpageTitleOnblur        : "(◍´꒳`◍) Hi, 菜花", // 当前页失去焦点，页面title显示文字
+        webpageTitleOnblur        : "神游中", // 当前页失去焦点，页面title显示文字
         webpageTitleOnblurTimeOut : 500, // 当前页失去焦点，页面title变化，延时时间，单位毫秒
-        webpageTitleFocus         : "(*´∇｀*) 欢迎回来！", // 当前页获取焦点，页面title显示文字，显示后延时恢复原title
+        webpageTitleFocus         : "欢迎回来！", // 当前页获取焦点，页面title显示文字，显示后延时恢复原title
         webpageTitleFocusTimeOut  : 1000, // 当前页获取焦点，页面title变化，延时时间，单位毫秒
         webpageIcon : "https://files.cnblogs.com/files/icaihua/blog_logo.gif", // 网站图标
 
@@ -214,7 +214,7 @@
     var staticFileSetting = {
         // source   : 'github',
         // versions : '3f3a10aadf27c5eb7f065d83a9c7ccb1e3aaef05', // 版本号
-        versions : '7de4c32e0886620cef7bc185d7de1b7f71e6c5c0'
+        versions : 'bk-v2.0'
     };
 
     // start cache
@@ -267,7 +267,7 @@
         switch (staticFileSetting.source) {
 
             case 'github': // 注意：此处为GitHub加载源，如果需要加载自己分支的代码，修改此处URL，URL规则详见：https://www.jsdelivr.com/
-                return 'https://cdn.jsdelivr.net/gh/Zhou-Hepeng/Cnblogs-Theme-SimpleMemory@'+staticFileSetting.versions+'/' + (file ? file : '');
+                return 'https://cdn.jsdelivr.net/gh/buchipingguo/cnblogs-simple@'+staticFileSetting.versions+'/' + (file ? file : '');
                 break;
 
             case 'cnblogs': // 注意：此处为博客园加载源，加载本人博客文件为老版本。本人博客园文件停止更新，如果需要可以修改至自己博客园文件
