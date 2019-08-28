@@ -24,8 +24,8 @@ a.ready(function () {
     o = s.find(':header');
     if (o.length > p) {
         r = false;
-        var t = s.find('h1');
-        var u = s.find('h2');
+        var t = s.find('h2');
+        var u = s.find('h3');
         if (t.length + u.length > p) {
             q = false
         }
@@ -39,7 +39,7 @@ a.ready(function () {
 
         u.attr('id', 'autoid-' + l + '-' + m + '-' + n);
 
-        if (v.localName === 'h1') {
+        if (v.localName === 'h2') {
             l++;
             m = 0;
             if(text.length>26) text=text.substr(0,26)+"...";
@@ -47,7 +47,7 @@ a.ready(function () {
             var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
 
             j += '<li lin=""><a href="#' + u.attr('id') + '" title="' + title + '">' + (text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)) + '</a><span class="sideCatalog-dot"></span></li>';
-        } else if (v.localName === 'h2') {
+        } else if (v.localName === 'h3') {
             m++;
             n = 0;
             if(q){
